@@ -1,24 +1,36 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
+import { Button } from "semantic-ui-react";
+
+const ButtonExampleLabeledBasicShorthand = () => (
+  <div>
+    <Button
+      color="red"
+      content="Like"
+      icon="heart"
+      label={{ basic: true, color: "red", pointing: "left", content: "2,048" }}
+    />
+    <Button
+      basic
+      color="blue"
+      content="Fork"
+      icon="fork"
+      label={{
+        as: "a",
+        basic: true,
+        color: "blue",
+        pointing: "left",
+        content: "2,048"
+      }}
+    />
+  </div>
+);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with prashant
-        </a>
-      </header>
+      lets catch-up
+      <ButtonExampleLabeledBasicShorthand />
     </div>
   );
 }

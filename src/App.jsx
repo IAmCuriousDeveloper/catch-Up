@@ -8,7 +8,6 @@ function App() {
     <div>
       <Navbar />
       <Container className="main">
-        lets catch-up
         <EventDashboard />
       </Container>
     </div>

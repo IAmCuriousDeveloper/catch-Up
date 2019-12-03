@@ -6,7 +6,11 @@ const HomePage = ({ history }) => {
       <div className="ui inverted vertical masthead center aligned segment">
         <div className="ui text container">
           <h1 className="ui inverted stackable header">
-            <img className="ui image massive" src="./logo.jpg" alt="logo" />
+            <img
+              className="ui image massive"
+              src={require("./logo.jpg")}
+              alt="logo"
+            />
             <div className="content">Catch-Up</div>
           </h1>
           <h2>Create Meetup in seconds</h2>

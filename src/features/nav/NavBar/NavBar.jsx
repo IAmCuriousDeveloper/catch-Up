@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, Container, Button } from "semantic-ui-react";
+import { Menu, Container, Button, Icon } from "semantic-ui-react";
 import { NavLink, Link, withRouter } from "react-router-dom";
 import SignedOutMenu from "../Menus/SignedOutMenu";
 import SignedInMenu from "../Menus/SignedInMenu";
@@ -28,8 +28,8 @@ class NavBar extends Component {
       <Menu inverted fixed="top">
         <Container>
           <Menu.Item as={Link} to="/" header>
-            <img src={require("../../../assets/logo.jpg")} alt="logo" />
-            Re-vents
+            <Icon name="handshake" size="huge" />
+            catch-Up
           </Menu.Item>
           <Menu.Item as={NavLink} to="/events" name="Events" />
           {authenticated && (

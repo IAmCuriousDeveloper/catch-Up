@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "semantic-ui-react";
 
 const HomePage = ({ history }) => {
   return (
@@ -6,11 +7,7 @@ const HomePage = ({ history }) => {
       <div className="ui inverted vertical masthead center aligned segment">
         <div className="ui text container">
           <h1 className="ui inverted stackable header">
-            <img
-              className="ui image massive"
-              src={require("./logo.jpg")}
-              alt="logo"
-            />
+            <Icon name="handshake" size="massive" />
             <div className="content">Catch-Up</div>
           </h1>
           <h2>Create Meetup in seconds</h2>

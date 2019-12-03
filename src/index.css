@@ -21,7 +21,6 @@ body {
 }
 
 /*home page styles*/
-
 .masthead {
   background-image: linear-gradient(
     135deg,
@@ -29,6 +28,10 @@ body {
     rgb(206, 114, 10) 69%,
     rgb(241, 206, 6) 89%
   ) !important;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .masthead.segment {
@@ -46,6 +49,7 @@ body {
   margin-bottom: 0;
   font-size: 4em;
   font-weight: normal;
+  padding-left: 23%;
 }
 
 .masthead h2 {
@@ -106,3 +110,8 @@ body {
   padding-bottom: 0 !important;
   padding-left: 2em !important;
 }
+
+/* i.icon.handshake:before {
+  content: "\f2b5";
+  margin-left: 120%;
+} */
